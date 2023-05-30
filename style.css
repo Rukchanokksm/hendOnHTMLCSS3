@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Noto+Sans&family=Prompt:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Prompt", sans-serif;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border-bottom: 1px solid #d1d1d1; */
+}
+.navbar a {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.leftnavBar {
+  display: flex;
+  align-items: center;
+}
+
+.rigthnavBar {
+  display: flex;
+  align-items: center;
+}
+.iconic {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/*main*/
+section {
+  margin-bottom: 80px;
+}
+.Maincontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Maincontent h1 {
+  margin: 30px 10px 30px 10px;
+}
+.carditem {
+  background-color: #ffffff;
+  box-shadow: 3px 8px 8px -1px rgba(0, 0, 0, 0.75);
+  width: 280px;
+}
+.carditem h3 {
+  text-align: center;
+}
+.imagcard img {
+  width: 100%;
+}
+
+.carditem:hover {
+  transition: 0.6s;
+  box-shadow: 3px 2px 10px 8px rgba(0, 0, 0, 0.55);
+}
+.mainproduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.deteil-item {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deteil-item p {
+  padding: 10px;
+}
+.btn {
+  position: relative;
+  text-decoration: none;
+}
+.btn p {
+  color: #000;
+}
+.btn img {
+  position: absolute;
+  left: 90px;
+  top: 15px;
+}
+.btn img:hover {
+  transition: 0.2s;
+  left: 120px;
+}
