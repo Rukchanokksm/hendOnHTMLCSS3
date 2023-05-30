@@ -11,13 +11,18 @@ body {
   background-color: #f0f0f0;
   position: relative;
 }
-
+/* nav {
+  background-color: #ffffff;
+} */
 .navbar {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  top: 0;
+  position: fixed;
   /* border-bottom: 1px solid #d1d1d1; */
 }
 .navbar a {
@@ -26,6 +31,7 @@ body {
   color: #000;
 }
 .leftnavBar {
+  gap: 6px;
   display: flex;
   align-items: center;
 }
@@ -33,6 +39,7 @@ body {
 .rigthnavBar {
   display: flex;
   align-items: center;
+  gap: 6px;
 }
 .iconic {
   display: block;
@@ -40,7 +47,18 @@ body {
   align-items: center;
   margin: 10px;
 }
-
+/*nav toggle*/
+.nav-toggle {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .nav-toggle {
+    display: flex;
+  }
+  .rigthnavBar {
+    display: none;
+  }
+}
 /*main*/
 section {
   margin-bottom: 80px;
@@ -50,7 +68,10 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
+
 .Maincontent h1 {
   margin: 30px 10px 30px 10px;
 }
@@ -75,6 +96,7 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .deteil-item {
@@ -83,23 +105,30 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .deteil-item p {
   padding: 10px;
 }
+
+/* button shop now */
 .btn {
   position: relative;
   text-decoration: none;
 }
+.btn p:hover {
+  color: red;
+}
+
 .btn p {
   color: #000;
 }
-.btn img {
+.nextscroll {
   position: absolute;
   left: 90px;
   top: 15px;
 }
-.btn img:hover {
+.nextscroll:hover {
   transition: 0.2s;
   left: 120px;
 }
